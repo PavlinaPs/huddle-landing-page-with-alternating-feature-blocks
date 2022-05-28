@@ -1,0 +1,24 @@
+@use '../abstracts' as *;
+
+body {
+    @include flex-center;
+    flex-direction: column;
+    
+    font-family: var(--ff-body);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-normal-mobile);
+    color: var(--clr-very-dark-cyan);
+
+    @media (min-width: $desktop) {
+        font-size: var(--fs-normal-desktop);
+    }
+}
+
+.landing__container {
+    width: 37.5rem;
+
+    @media (min-width: $desktop) {
+        //max-width: 144rem;
+        width: 144rem;
+    }
+}
