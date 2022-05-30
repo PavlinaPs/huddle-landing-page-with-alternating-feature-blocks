@@ -99,7 +99,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 2.3rem 1.6rem 0 1.6rem;
-  border: 1px solid red;
 }
 @media (min-width: 65em) {
   .header__logo-container {
@@ -146,7 +145,6 @@ body {
 .header__text-mockup-container {
   margin-top: 8.2rem;
   padding: 0 3.5rem 3.2rem;
-  border: 1px solid pink;
 }
 @media (min-width: 65em) {
   .header__text-mockup-container {
@@ -239,7 +237,6 @@ body {
 .landing__main-sections {
   position: relative;
   padding: 10rem 2rem 22.7rem;
-  border: 1px solid purple;
 }
 @media (min-width: 65em) {
   .landing__main-sections {
