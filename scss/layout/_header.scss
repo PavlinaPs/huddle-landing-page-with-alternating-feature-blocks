@@ -137,7 +137,9 @@
 }
 
 .header__illustration {
-    margin-top: 5.3rem;
+    margin: 5.3rem auto 0;
+    width: 100%;
+    max-width: 60rem;
 
     @media (min-width: $desktop) {
         margin: 0;

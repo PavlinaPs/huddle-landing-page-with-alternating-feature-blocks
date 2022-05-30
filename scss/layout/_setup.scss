@@ -15,10 +15,10 @@ body {
 }
 
 .landing__container {
-    width: 37.5rem;
+    //width: 37.5rem;
 
     @media (min-width: $desktop) {
-        //max-width: 144rem;
-        width: 144rem;
+        max-width: 144rem;
+        //width: 144rem;
     }
 }

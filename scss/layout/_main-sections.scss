@@ -52,7 +52,10 @@
 
 // section grow specific
 .grow__illustration {
+    margin: 0 auto;
     padding: 0 1.9rem 0 2rem; 
+    width: 100%;
+    max-width: 32rem;
     
     @media (min-width: $desktop) {
         grid-area: img;
@@ -72,7 +75,10 @@
 
 // section flowing specific
 .flowing__illustration {
+    margin: 0 auto;
     padding: 0 1.4rem 0 1.7rem; 
+    width: 100%;
+    max-width: 32rem;
     
     @media (min-width: $desktop) {
         grid-area: img;
@@ -92,7 +98,10 @@
 
 // section your specific
 .your__illustration {
+    margin: 0 auto;
     padding: 0 1.5rem 0 1.6rem; 
+    width: 100%;
+    max-width: 32rem;
     
     @media (min-width: $desktop) {
         grid-area: img;
