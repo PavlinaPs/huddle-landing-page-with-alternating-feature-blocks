@@ -1,12 +1,13 @@
 @use '../abstracts' as *;
 
 .landing__main-sections {
+    position: relative;
     padding: 10rem 2rem 22.7rem;
 
     border: 1px solid purple;
 
     @media (min-width: $desktop) {
-        padding: 15.8rem 10.2rem 34.3rem 10.5rem;
+        padding: 15.8rem 10.2rem 34.5rem 10.5rem;
     }
 }
 

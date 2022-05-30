@@ -1,0 +1,63 @@
+@use '../abstracts' as *;
+
+.landing__ready {
+    position: absolute;
+    bottom: -6.8rem;
+    left: 0;
+    right: 0;
+    width: 94%;
+    margin: 0 auto;
+    padding: 4.4rem 2rem 4rem 2.3rem;
+    border-radius: 1.5rem;
+    background-color: var(--clr-white);
+    box-shadow: 0 0 1rem var(--clr-bs);
+    z-index: 10;
+
+    //border: 1px solid yellowgreen;
+
+    @media (min-width: $desktop) {
+        bottom: -9.3rem;
+        width: 55.5%;
+        max-width: 100rem;
+        padding: 6.4rem 7.7rem 5rem;
+    }
+}
+
+.ready__title {
+    font-family: var(--ff-heading);
+    font-size: var(--fs-ready-mobile);
+    font-weight: var(--fw-bold);
+
+    @media (min-width: $desktop) {
+        font-size: var(--fs-ready-desktop);
+        text-align: center;
+    }
+}
+
+.ready__button {
+    width: 20rem;
+    margin: 2.4rem auto 0;
+    padding: 1.3rem 0;
+    font-family: var(--ff-body);
+    font-size: var(--fs-ready-button-mobile);
+    font-weight: var(--fw-bold);
+    color: var(--clr-white);
+    text-align: center;
+    background-color: var(--clr-pink);
+    border-radius: 2.1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem var(--clr-bs);
+
+    @media (min-width: $desktop) {
+        width: 40rem;
+        margin: 3.4rem auto 0;
+        padding: 2.6rem 0;
+        font-size: var(--fs-ready-button-desktop);
+        font-weight: var(--fw-regular);
+        letter-spacing: 0.05rem;
+        border-radius: 4rem;
+    }
+}
+
+.ready__button:hover {
+    background-color: var(--clr-light-pink);
+}
