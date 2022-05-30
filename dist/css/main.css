@@ -231,6 +231,7 @@ body {
 @media (min-width: 65em) {
   .header__illustration {
     margin: 0;
+    max-width: none;
   }
 }
 
