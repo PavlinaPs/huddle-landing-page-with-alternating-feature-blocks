@@ -3,33 +3,33 @@
 .landing__footer {
     position: relative;
     height: auto;
-    padding: 25.7rem 2.8rem 4.7rem;
+    padding: 13.7rem 2.8rem 4.9rem 1.8rem;
+    color: var(--clr-white);
     background-color: var(--clr-very-dark-cyan);
 
     @media (min-width: $desktop) {
-        margin-top: 0rem;
-        padding: 20rem 2.8rem 8.5rem 10.5rem;
+        padding: 19rem 8rem 8.5rem 12rem;
     }
 }
 
 .footer__logo {
-    width: 55%;
+    width: 51%;
     max-width: 20rem;
-    margin-left: 1rem;
 
     @media (min-width: $desktop) {
-        width: 14%;
+        width: 20%;
+        max-width: 30rem;
     }
 }
 
 // text container
 .footer__text-container {
-    margin-top: 3.5rem;
+    margin-top: 2.35rem;
 
     @media (min-width: $desktop) {
-        margin-top: 2.3rem;
+        margin-top: 3.8rem;
         display: grid;
-        grid-template-columns: 36.5% 24% 11.5% 15% 10%;
+        grid-template-columns: 41% 18% 19% 22%;
     }
 }
 
@@ -37,31 +37,28 @@
 .footer__location-container {
     display: flex;
     align-items: flex-start;
-    gap: 2.3rem;
+    gap: 2.8rem;
 
     & img {
-        padding-top: 0.9rem;
+        padding-top: 0.8rem;
     }
 
     @media (min-width: $desktop) {
-        margin-top: 0.3rem;
-        padding-left: 1.2rem; 
-        padding-right: 4rem;
-        gap: 2.8rem;
+        padding-right: 12rem;
     }
 }
 
 .footer__location-text {
-    font-size: var(--fs-footer-location-mobile);
-    line-height: 1.5;
+    font-size: var(--fs-footer-mobile);
+    line-height: 1.55;
 }
 
 // phone & email
 .footer__contacts {
-    margin-top: 1.8rem;
+    margin-top: 2.5rem;
 
     @media (min-width: $desktop) {
-        margin-top: 0.6rem;
+        margin-top: 2.6rem;
     }
 }
 
@@ -69,7 +66,8 @@
 .footer__contact--email {
     display: flex;
     align-items: center;
-    gap: 1.6rem;
+    gap: 2.3rem;
+    font-size: var(--fs-footer-mobile);
 
     @media (min-width: $desktop) {
         gap: 2.6rem;
@@ -77,8 +75,8 @@
 }
 
 .footer__contact--phone > img {
-    width: 1.3rem;
-    height: 1.3rem;
+    width: 1.8rem;
+    height: 1.8rem;
 
     @media (min-width: $desktop) {
         width: 1.8rem;
@@ -87,7 +85,9 @@
 }
 
 .footer__contact--email {
-    margin-top: 2.2rem;
+    gap: 2.1rem;
+    margin-top: 2.6rem;
+
 }
 
 .footer__contact--email > img {
@@ -96,17 +96,17 @@
 }
 
 // footer links lists
-.footer__link--1,
-.footer__link--2 {
-    margin-top: 8.2rem;
-    font-size: var(--fs-footer-location-mobile);
+.footer__links--1,
+.footer__links--2 {
+    margin-top: 5.8rem;
+    font-size: var(--fs-links-mobile);
 
     @media (min-width: $desktop) {
         margin-top: 0;
     }
 
     & li {
-        margin-top: 1.6rem;
+        margin-top: 1.9rem;
     }
 
     & li:first-child {
@@ -114,29 +114,20 @@
     }
 }
 
-.footer__link--2 {
-    margin-top: 5rem;
+.footer__links--2 {
+    margin-top: 1.9rem;
 
     @media (min-width: $desktop) {
         margin-top: 0;
     }
 }
 
-.footer__link--1 a,
-.footer__link--2 a {
+.footer__links--1 a,
+.footer__links--2 a {
     color: var(--clr-white);
 
-    &::before {
-        content: attr(title);
-        display: block;
-        height: 0;
-        font-weight: var(--fw-semiBold);
-        overflow: hidden;
-        visibility: hidden;
-    }
-
     &:hover {
-        font-weight: var(--fw-semiBold);
+        border-bottom: 0.1rem solid var(--clr-white);
     }
 }
 
@@ -144,8 +135,9 @@
 .footer__socials {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-top: 7.8rem;
+    gap: 1.2rem;
+    margin-top: 5.5rem;
+    padding-left: 1rem;
 
     @media (min-width: $desktop) {
         gap: 1.3rem;
@@ -157,22 +149,23 @@
 .footer__socials li {
     @include flex-center;
     
-    width: 2.7rem;
-    height: 2.7rem;
+    width: 3.2rem;
+    height: 3.2rem;
     border-radius: 50%;
     border: 0.1rem solid var(--clr-white);
 
     @media (min-width: $desktop) {
+        align-items: flex-start;
         width: 3.2rem;
         height: 3.2rem;
     }
 
     &:hover,
     &:focus {
-        border: 1px solid var(--clr-gradient-2);
+        border: 1px solid var(--clr-pink);
 
         & i {
-            color: var(--clr-gradient-2);
+            color: var(--clr-pink);
         }
     }
 }
@@ -180,4 +173,15 @@
 .footer__socials i {
     font-size: var(--fs-normal-mobile);
     color: var(--clr-white);
+}
+
+.copyright {
+    margin-top: 2.3rem;
+    padding-left: 1rem;
+    font-size: var(--fs-copyright-mobile);
+    text-align: center;
+
+    @media (min-width: $desktop) {
+        text-align: right;
+    }
 }
